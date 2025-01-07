@@ -8,7 +8,7 @@ Step 2: Switch to the School database
 ![image](https://github.com/user-attachments/assets/80192f8c-da88-420a-8c3d-00c5121b8dc2)
 
 Step 3: Create a table named STUDENT
-![image](https://github.com/user-attachments/assets/e4f24334-2f10-42a5-9d90-72fb4a0dd1c7)
+![image](https://github.com/user-attachments/assets/9fc72ca8-d163-4412-b232-6bb0e805e199)
 
 Step 4: Insert sample data into the STUDENT table
 ![image](https://github.com/user-attachments/assets/a7bfe60d-1c4a-4002-908d-acb2498236b1)
