@@ -3,6 +3,49 @@
 (DDL-COMMANDS-ASSIGNMENT-1)
 Create a database named School and perform all the DDL commands (CREATE, ALTER, DROP, RENAME, TRUNCATE) for the table named STUDENT with fields: Roll_No Name Marks Grade Create data on your own based on the given columns
 
+## SCRIPT
+
+-- ASSIGNMENT 1-DDL COMMANDS
+
+-- CREATE A DATABASE NAMED SCHOOL AND USE IT
+CREATE DATABASE SCHOOL;
+USE SCHOOL;
+
+-- CREATE A TABLE NAMED STUDENT
+CREATE TABLE STUDENT(
+Roll_no INT PRIMARY KEY,
+Full_name VARCHAR(50),
+Marks INT,
+Grade CHAR(1)
+);
+
+-- INSERT SAMPLE DATA INTO STUDENT TABLE
+INSERT INTO STUDENT(Roll_no,Full_name,Marks,Grade)
+VALUES(1,'SHRIYA SHARMA',96,'A'),(2,'KRISHNA NATH',85,'B'),(3,'DISHA RAJ',68,'C'),(4,'RISHAB KUMAR',75,'B'),(5,'SANYA SINGH',94,'A');
+
+-- USE THE SELECT COMMAND TO DISPLAY THE TABLE
+SELECT * FROM STUDENT;
+
+-- ADD A COLUMN NAMED 'CONTACT' TO THE STUDENT TABLE.
+ALTER TABLE STUDENT ADD Contact VARCHAR(15);
+SELECT * FROM STUDENT;
+
+-- REMOVE GRADE COLUMN FROM THE STUDENT TABLE
+ALTER TABLE STUDENT DROP COLUMN GRADE;
+SELECT * FROM STUDENT;
+
+-- CHANGE THE NAME OF THE TABLE STUDENT TO CLASSTEN
+ALTER TABLE STUDENT RENAME TO CLASSTEN;
+
+-- DELETE ALL ROWS FROM THE CLASSTEN TABLE
+TRUNCATE TABLE CLASSTEN;
+SELECT * FROM CALSSTEN;
+
+-- REMOVE THE CLASSTEN TABLE FROM THE DATABASE
+DROP TABLE CLASSTEN;
+
+## MYSQL WORKBENCH SNAPS OF SCRIPT AND EXECUTION
+
 # Step 1: Create a database named School
 ![image](https://github.com/user-attachments/assets/b3a496fa-e1df-4771-aa95-1770d0ca1ad6)
 
@@ -43,4 +86,12 @@ Create a database named School and perform all the DDL commands (CREATE, ALTER, 
 *DROP TABLE: Deletes the table schema and data permanently.
 *SELECT: Displays data from the table.
 
+## Notes
+Make sure the database does not already exist before running the script to avoid conflicts.
+Review the script carefully and customize it as needed for your requirements.
 
+## Contributing
+Feel free to submit issues or pull requests to improve this script. Contributions are always welcome!
+
+## Contact
+For any questions or support, please contact lianasimon77@gmail.com
